@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/shapes"
+        android:text="@string/shape"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/color"
+        android:textSize="30dp"
+        android:id="@+id/color"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/shapes"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/circle"
+        android:id="@+id/circle"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/shapes"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:onClick="onRadioButtonClick"
+
+        />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/square"
+        android:id="@+id/square"
+        android:layout_alignTop="@+id/circle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="74dp"
+        android:onClick="onRadioButtonClick"
+        />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="165dp"
+        android:id="@+id/spinner"
+
+        />
+
+    <edu.elon.radiospinner.DrawView
+        android:id="@+id/drawview"
+        android:layout_width="fill_parent"
+        android:layout_height="50%"
+        android:layout_alignBottom="@+id/spinner"
+        android:layout_marginTop="20dp"
+
+        />
+
+
+</RelativeLayout>

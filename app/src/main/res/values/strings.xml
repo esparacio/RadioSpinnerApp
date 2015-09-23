@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">RadioSpinner</string>
+    <string name="shape">Shape?</string>
+    <string name="color">Color?</string>
+    <string name="circle">Circle</string>
+    <string name="square">Square</string>
+    <string name="red">Red</string>
+    <string name="green">Green</string>
+    <string name="blue">Blue</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+</resources>
